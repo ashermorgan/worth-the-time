@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Is It Worth the Time?</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="initValues()">
+        <header>
+            <h1>Is It Worth the Time?</h1>
+        </header>
+
+        <div id="error"></div>
+
+        <p id="description">
+            What is the maximum amount of time you should spend automating a routine task?
+        </p>
+
+        <div id="calculator">
+            <div>
+                <b>Task frequency:</b>
+                <input id="frequencyInput" type="number" min="1" oninput="update()">
+                time(s) per
+                <select id="frequencyUnitInput" oninput="update();">
+                    <option value="second">Second</option>
+                    <option value="minute">Minute</option>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <div>
+                <b>Task length:</b>
+                <input id="lengthInput" type="number" min="1" oninput="update()">
+                <select id="lengthUnitInput" oninput="update();">
+                    <option value="second">Second(s)</option>
+                    <option value="minute">Minute(s)</option>
+                    <option value="hour">Hour(s)</option>
+                    <option value="day">Day(s)</option>
+                    <option value="week">Week(s)</option>
+                    <option value="month">Month(s)</option>
+                    <option value="year">Year(s)</option>
+                </select>
+            </div>
+            <div>
+                <b>Time period:</b>
+                <input id="periodInput" type="number" min="1" oninput="update()">
+                <select id="periodUnitInput" oninput="update();">
+                    <option value="second">Second(s)</option>
+                    <option value="minute">Minute(s)</option>
+                    <option value="hour">Hour(s)</option>
+                    <option value="day">Day(s)</option>
+                    <option value="week">Week(s)</option>
+                    <option value="month">Month(s)</option>
+                    <option value="year">Year(s)</option>
+                </select>
+            </div>
+
+            <div id="output">
+                <b>Maximum time:</b>
+                <span id="maxTime"></span>
+            </div>
+        </div>
+
+        <div id="placeholder"></div>
+
+        <footer>
+            Inspired by
+            <a href="https://xkcd.com/1205/" title="xkcd 1205">xkcd 1205</a>
+        </footer>
+    </body>
+</html>
