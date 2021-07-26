@@ -1,0 +1,41 @@
+{
+    "background_color": "#96a8c8",
+    "categories": ["productivity"],
+    "description": "Calculates the maximum amount of time you should spend automating a routine task",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "images/favicon-32.png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "images/favicon-180.png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "images/favicon-192.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/favicon-192-maskable.png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/favicon-512.png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "images/favicon-512-maskable.png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "lang": "en-US",
+    "name": "worth-the-time",
+    "orientation": "portrait",
+    "scope": "./",
+    "short_name": "worth-the-time",
+    "start_url": "./index.html",
+    "theme_color": "#96a8c8"
+}
