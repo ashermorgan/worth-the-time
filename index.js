@@ -51,7 +51,7 @@ function update() {
         errorMessage = "The time period cannot be less than or equal to zero";
     }
     else if (frequency < length) {
-        errorMessage = "The task frequency cannot be greater than the task length";
+        errorMessage = "Tasks cannot overlap, lower either the task frequency or the task length";
     }
     else if (length > period) {
         errorMessage = "The task length cannot be greater than the time period";

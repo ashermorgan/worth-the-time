@@ -53,6 +53,9 @@ header {
 #calculator div {
     margin: 10px 0px;
 }
+#calculator label {
+    font-weight: bold;
+}
 #calculator input[type=number] {
     width: 50px;
 }
@@ -70,4 +73,12 @@ header {
 /* page footer */
 footer {
     margin: 10px;
+}
+
+
+/* adjust font sizes for mobile devices */
+@media only screen and (max-width: 800px) {
+    input, select {
+        font-size: 1em;
+    }
 }
