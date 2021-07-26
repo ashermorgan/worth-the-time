@@ -82,3 +82,10 @@ footer {
         font-size: 1em;
     }
 }
+
+
+/* 404 page */
+#error404 {
+    margin: 10px;
+    text-align: center;
+}
