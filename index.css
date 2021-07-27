@@ -32,7 +32,6 @@ header {
 
 /* error banner */
 #error {
-    background-color: #ff6666;
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -57,7 +56,13 @@ header {
     font-weight: bold;
 }
 #calculator input[type=number] {
-    width: 50px;
+    width: 65px;
+    border-radius: 5px;
+    padding: 3px;
+}
+#calculator select {
+    border-radius: 5px;
+    padding: 3px;
 }
 #output {
     margin-top: 20px !important;
@@ -74,12 +79,64 @@ header {
 footer {
     margin: 10px;
 }
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+footer a:hover {
+    text-decoration: underline;
+}
 
 
 /* adjust font sizes for mobile devices */
 @media only screen and (max-width: 800px) {
     input, select {
         font-size: 1em;
+    }
+}
+
+
+/* light mode (default) */
+body {
+    background-color: #ffffff;
+}
+* {
+    color: #000000;
+}
+#error {
+    background-color: hsl(0, 100%, 70%);
+    color: #ffffff;
+}
+input, select {
+    background-color: #ffffff;
+    border: 1px solid hsl(0, 0%, 75%);
+}
+a {
+    color: hsl(210, 100%, 40%);
+}
+
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: hsl(210, 15%, 10%);
+    }
+    * {
+        color: hsl(210, 15%, 80%);
+    }
+    #error {
+        background-color: hsl(0, 50%, 50%);
+        color: #ffffff;
+    }
+    header h1 {
+        color: #000000;
+    }
+    input, select {
+        background-color: hsl(210, 15%, 5%);
+        border: 1px solid hsl(210, 15%, 25%);
+    }
+    a {
+        color: hsl(210, 100%, 65%);
     }
 }
 
